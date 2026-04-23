@@ -7,14 +7,25 @@ class MiFooter extends HTMLElement {
     this.shadowRoot.innerHTML = `
       <style>
         footer { 
-            background:#222; 
+            background: linear-gradient(135deg, #185FA5, #136cbb); 
             color:white; 
             text-align:center; 
             padding:15px; 
-            margin-top:20px; 
+            margin-top:20px;
+            box-shadow: 0 -4px 15px rgba(0,0,0,0.15);
+            font-family: system-ui, sans-serif;
+        }
+
+        p{
+          margin:0;
+          font-size:14px;
+          opacity:0.95;
         }
       </style>
-      <footer><p>© 2026 - Mi Sitio Web</p></footer>
+
+      <footer>
+        <p>© 2026 - Mi Sitio Web</p>
+      </footer>
     `;
   }
 }
