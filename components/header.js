@@ -1,46 +1,48 @@
 class MiHeader extends HTMLElement {
   constructor() {
     super();
-    // indicando una funcion
     this.attachShadow({ mode: "open" });
   }
-  //   agregar los elementos al dom
   connectedCallback() {
-    //   sirve para insertar datos al dom
     this.shadowRoot.innerHTML = `
-    <style>
+      <style>
         header {
-            background: #000;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-        
-        h1{
-            margin-top: 0%
+            background: #185FA5; 
+            padding: 0 24px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+            height: 56px;
         }
 
-        a {
+        h1 {
+            color:white;
+        }
+
+        nav a {
             color: white;
-            margin: 0 10px; 
+            margin: 0 12px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 500;
+            opacity: 0.9;
+            transition: 0.2s;
         }
 
         nav a:hover {
-            text-decoration: underlin;
+            opacity: 1;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.7);
         }
-    </style>
-     <header>
-        <h1>Aplicación de Galería</h1>
+      </style>
+      <header>
+        <h1>Mi Blog</h1>
         <nav>
-            <a href="#/">Inicio</a>
-            <a href="#/gallery">Galeria</a>
-            <a href="#/direction">Dirección</a>
+          <a href='#/'>Inicio</a>
+          <a href='#/galeria'>Galería</a>
+          <a href='#/contacto'>Contacto</a>
+          <a href='#/contacto'>Blog</a>
         </nav>
-     </header>
+      </header>
     `;
   }
 }
-
 customElements.define("mi-header", MiHeader);

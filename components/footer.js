@@ -1,27 +1,20 @@
 class MiFooter extends HTMLElement {
   constructor() {
     super();
-    //indicando una funcion
     this.attachShadow({ mode: "open" });
   }
-  //agregar los elementos al dom
   connectedCallback() {
-    //   sirve para insertar datos al dom
     this.shadowRoot.innerHTML = `
-        <style>
-            footer {
-                background: #000;
-                color: white;
-                padding: 15px;
-                text-align: center; 
-                margin-top: 15px;
-            }
-        </style>
-        <footer>
-            <p>
-                Todos los derechos reservados - ESPE
-            </p>
-        </footer>
+      <style>
+        footer { 
+            background:#222; 
+            color:white; 
+            text-align:center; 
+            padding:15px; 
+            margin-top:20px; 
+        }
+      </style>
+      <footer><p>© 2026 - Mi Sitio Web</p></footer>
     `;
   }
 }

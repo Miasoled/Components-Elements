@@ -1,20 +1,19 @@
-//funcion de flecha
-const router = () => {
+function router() {
   const app = document.getElementById("app");
   const path = window.location.hash;
-
   switch (path) {
-    case "#/gallery":
-      app.innerHTML = `<galeria-imagenes></galeria-imagenes>`;
+    case "#/galeria":
+      app.innerHTML = "<galeria-imagenes></galeria-imagenes>";
       break;
-    case "#/direction":
-      app.innerHTML = `<mi-direction></mi-direction>`;
+    case "#/contacto":
+      app.innerHTML = "<contacto-page></contacto-page>";
+      break;
+    case "#/blog":
+      app.innerHTML = "<blog-page></blog-page>";
       break;
     default:
-      app.innerHTML = `<mi-home></mi-home>`;
-      break;
+      app.innerHTML = "<home-page></home-page>";
   }
-};
-
+}
 window.addEventListener("hashchange", router);
 window.addEventListener("load", router);
