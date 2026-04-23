@@ -39,7 +39,7 @@ class MiHeader extends HTMLElement {
           <a href='#/'>Inicio</a>
           <a href='#/galeria'>Galería</a>
           <a href='#/contacto'>Contacto</a>
-          <a href='#/contacto'>Blog</a>
+          <a href='#/blog'>Blog</a> 
         </nav>
       </header>
     `;
