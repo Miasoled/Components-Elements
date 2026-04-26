@@ -175,6 +175,7 @@ s        }
         <button class="banner-btn" onclick="location.hash='/contacto'">Contáctanos</button>
       </div>
     `;
+    this.innerHTML = "<h2> Personalizar esta page </h2>";
   }
 }
 customElements.define("home-page", HomePage);

@@ -23,6 +23,20 @@ class MiFooter extends HTMLElement {
         .footer-bottom p, .footer-bottom span {
           font-size: 12px; 
           color: rgba(255,255,255,0.35); 
+        footer { 
+            background: linear-gradient(135deg, #185FA5, #136cbb); 
+            color:white; 
+            text-align:center; 
+            padding:15px; 
+            margin-top:20px;
+            box-shadow: 0 -4px 15px rgba(0,0,0,0.15);
+            font-family: system-ui, sans-serif;
+        }
+
+        p{
+          margin:0;
+          font-size:14px;
+          opacity:0.95;
         }
       </style>
 
@@ -31,6 +45,7 @@ class MiFooter extends HTMLElement {
           <p>© 2026 Blog Gatuno · Todos los derechos reservados</p>
           <span>Hecho con <span class="heart">♥</span> para los amantes de los gatos</span>
         </div>
+        <p>© 2026 - Mi Sitio Web</p>
       </footer>
     `;
   }

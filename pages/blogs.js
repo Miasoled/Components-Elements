@@ -100,6 +100,7 @@ class BlogPage extends HTMLElement {
           .join("")}
       </div>
     `;
+    this.innerHTML = "<h2> Personalizar esta page blogs </h2>";
   }
 }
 customElements.define("blog-page", BlogPage);
